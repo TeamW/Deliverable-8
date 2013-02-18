@@ -1,0 +1,36 @@
+package uk.ac.glasgow.internman.impl;
+import static org.junit.Assert.*;
+
+import java.util.Date;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class InternManStubTest {
+	private String username;
+	private String password;
+	InternManStub interfc;
+	
+	@Before
+	public void setUp() throws Exception {
+		username="user";
+		password="pass";
+		interfc=new InternManStub();
+	}
+	
+	@After
+	public void tearDown() throws Exception 
+	{
+		username=null;
+		password=null;
+		interfc=null;
+	}
+	
+	@Test
+	public void RegisterNewEmployer() 
+	{
+		assertEquals(1,1);
+	}
+
+}
