@@ -59,11 +59,14 @@ PSD3 Requirements Specification:
 
 \subsection{Purpose and Description Of Document}
 
-\subsection{Document Status and Schedule}
+This document serves as the Acceptance Test Report based on the test cases
+created by Team W, ran on the internship management implementation by Team V.
 
 \newpage
 
 \section{Testing}
+
+\subsection{Approve Accepted Offer}
 
 \subsection{Login}
 
@@ -85,7 +88,8 @@ Expected Outcome & Student '100000' logged in, true returned.\\
 \hline
 Actual Outcome & Student not logged in, false returned.\\
 \hline
-Additional Comments & Supplied user information appears to have been incorrect.\\
+Additional Comments & Supplied user information appears to have been 
+incorrect.\\
 \hline
 \end{tabularx}
 
@@ -109,7 +113,8 @@ Expected Outcome & Student not logged in, false returned.\\
 \hline
 Actual Outcome & Student not logged in, false returned.\\
 \hline
-Additional Comments & As expected as there would appear to be no student users installed.\\
+Additional Comments & As expected as there would appear to be no student 
+users installed.\\
 \hline
 \end{tabularx}
 
@@ -133,7 +138,8 @@ Expected Outcome & Student not logged in, false returned.\\
 \hline
 Actual Outcome & Student not logged in, false returned.\\
 \hline
-Additional Comments & As expected as there would appear to be no student users installed.\\
+Additional Comments & As expected as there would appear to be no student 
+users installed.\\
 \hline
 \end{tabularx}
 
@@ -157,7 +163,8 @@ Expected Outcome & Employer 'empl' logged in, true returned.\\
 \hline
 Actual Outcome & Employer not logged in, false returned.\\
 \hline
-Additional Comments & Supplied user information appears to have been incorrect.\\
+Additional Comments & Supplied user information appears to have been incorrect.
+\\
 \hline
 \end{tabularx}
 
@@ -181,7 +188,8 @@ Expected Outcome & Employer not logged in, false returned.\\
 \hline
 Actual Outcome & Employer not logged in, false returned.\\
 \hline
-Additional Comments & As expected as there would appear to be no employer users installed.\\
+Additional Comments & As expected as there would appear to be no employer users 
+installed.\\
 \hline
 \end{tabularx}
 
@@ -195,7 +203,8 @@ Date Tested & 18/02/2013\\
 \hline
 Tester & Gordon Reid - 1002536r\\
 \hline
-Description & Login an invalid employer. User: notAnEmployer, Pass: notmypassword\\
+Description & Login an invalid employer. User: notAnEmployer, Pass: 
+notmypassword\\
 \hline
 Setup & None possible - unable to add own users.\\
 \hline
@@ -205,7 +214,8 @@ Expected Outcome & Employer not logged in, false returned.\\
 \hline
 Actual Outcome & Employer not logged in, false returned.\\
 \hline
-Additional Comments & As expected as there would appear to be no employer users installed.\\
+Additional Comments & As expected as there would appear to be no employer users 
+installed.\\
 \hline
 \end{tabularx}
 
@@ -243,7 +253,8 @@ Date Tested & 18/02/2013\\
 \hline
 Tester & Gordon Reid - 1002536r\\
 \hline
-Description & Login an invalid course coordinator. User: tws, Pass: notmypassword\\
+Description & Login an invalid course coordinator. User: tws, Pass: 
+notmypassword\\
 \hline
 Setup & None possible - unable to add own users.\\
 \hline
@@ -267,7 +278,8 @@ Date Tested & 18/02/2013\\
 \hline
 Tester & Gordon Reid - 1002536r\\
 \hline
-Description & Login an invalid course coordinator. User: NotTheCC, Pass: notmypassword\\
+Description & Login an invalid course coordinator. User: NotTheCC, Pass: 
+notmypassword\\
 \hline
 Setup & None possible - unable to add own users.\\
 \hline
@@ -281,4 +293,55 @@ Additional Comments & Supplied user information appears to have been correct.\\
 \hline
 \end{tabularx}
 
+\newpage
+
+\subsection{Notify Accepted Offer}
+
+\newpage
+
+\subsection{Publish Advertisement Test}
+
+\newpage
+
+\subsection{Register Employer}
+
+\newpage
+
+\subsection{Submit Advertisement}
+
+\newpage
+
+\subsection{View Advertisement Summary}
+
+\newpage
+
+\subsection{View Student Detail}
+
+\newpage
+
+\section{Summary}
+
+\subsection{Supplied Data}
+
+The implementation supplied was incomplete with assignAcademicVisitor(),
+recordVisitAssessment(), and createNewSelfSourcedRole(). These methods however
+are not necessarily required for the must have use cases.
+
+The implementation has no compiled JavaDoc and, after inspection, the
+implementation lacks JavaDoc entirely.
+
+There was a large block comment specifying usernames contained within the
+system however only the course coordinator information was supplied. Secondly,
+the team's tests used a different user name for student (100000 instead of
+stu) however neither successfully login.
+
+There was also no build directory and thus no INSTALL.txt.
+
+In addition, there was no README.txt to know how to contact the team. The
+team looked out to the third year computing science Facebook group to contact
+the team. This was successful however the team themselves were not entirely
+sure how the implementation worked.
+
+These issues meant that modifying our test set up was impossible to conduct
+while maintaining the black box testing benefits.
 \end{document}
