@@ -17,6 +17,7 @@ urlcolor={medium-red}}
 \deliverableID{D8.3}
 \project{PSD3 Group Exercise 2}
 \team{W}
+\version{1.0}
 \author{
     Gordon Reid: 1002536R\\
     Ryan Wells: 1002253W\\
@@ -67,6 +68,80 @@ created by Team W, ran on the internship management implementation by Team V.
 \section{Testing}
 
 \subsection{Approve Accepted Offer}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityAAO1\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator and accept a student's internship.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Student 100000 has their internship approved.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & Due to login failure and the facade assumption that a
+user is logged in, null pointer exception happens.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityAAO2\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as student and accept a student's internship.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Student 100000 has their internship still as ACCEPTED.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & Due to login failure and the facade assumption that a
+user is logged in, null pointer exception happens.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityAAO3\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator and accept a student's internship.
+The student does not exist.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & No change and program doesn't crash.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & Due to login failure and the facade assumption that a
+user is logged in, null pointer exception happens.\\
+\hline
+\end{tabularx}
 
 \subsection{Login}
 
@@ -311,6 +386,10 @@ Additional Comments & Supplied user information appears to have been correct.\\
 
 \newpage
 
+\subsubsection{View Advertisement Detail}
+
+\newpage
+
 \subsection{View Advertisement Summary}
 
 \newpage
@@ -344,4 +423,33 @@ sure how the implementation worked.
 
 These issues meant that modifying our test set up was impossible to conduct
 while maintaining the black box testing benefits.
+
+\subsection{Failed Use Cases}
+
+\subsubsection{Approve Accepted Offer}
+
+The approve accepted offer fails because login fails. Login fails because the
+supplied data for student and employers appears to be incorrect and there is
+no way to set up a user.
+
+\subsubsection{Login}
+
+The login use case failed for students and employers. As we were only able to
+use the supplied data, the failing cannot be entirely verified. One can only
+assume that the supplied data for students and employers is incorrect.
+
+\subsubsection{Notify Accepted Offer}
+
+\subsubsection{Publish Advertisement}
+
+\subsubsection{Register Employer}
+
+\subsubsection{Submit Advertisement}
+
+\subsubsection{View Advertisement Detail}
+
+\subsubsection{View Advertisement Summary}
+
+\subsubsection{View Student Detail}
+
 \end{document}
