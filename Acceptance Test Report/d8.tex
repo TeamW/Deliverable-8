@@ -372,27 +372,91 @@ Additional Comments & Supplied user information appears to have been correct.\\
 
 \subsection{Notify Accepted Offer}
 
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityNAO1\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator and notify of an internship.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{green}Pass\\
+\hline
+Expected Outcome & Nothing, course coordinators do not do internships.\\
+\hline
+Actual Outcome & Nothing, course coordinators do not do internships.\\
+\hline
+Additional Comments &\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityNAO2\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as an employer and notify of an internship.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Nothing, employers do not do internships.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & Due to login failure and the facade assumption that a
+user is logged in, null pointer exception happens.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityNAO3\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator and accept a student's internship.
+The student does not exist.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & No change and program doesn't crash.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & Due to login failure and the facade assumption that a
+user is logged in, null pointer exception happens.\\
+\hline
+\end{tabularx}
+
+
 \newpage
 
 \subsection{Publish Advertisement Test}
 
-\newpage
-
 \subsection{Register Employer}
-
-\newpage
 
 \subsection{Submit Advertisement}
 
-\newpage
-
-\subsubsection{View Advertisement Detail}
-
-\newpage
+\subsection{View Advertisement Detail}
 
 \subsection{View Advertisement Summary}
-
-\newpage
 
 \subsection{View Student Detail}
 
@@ -424,6 +488,27 @@ sure how the implementation worked.
 These issues meant that modifying our test set up was impossible to conduct
 while maintaining the black box testing benefits.
 
+\subsection{Overall test results}
+
+The entire test suite comprised of forty test cases. Of those there were two
+failures and twenty seven errors (all java.lang.NullPointerExcepton).
+
+The test cases which passed are exhaustively listed below:
+
+\begin{enumerate}
+	\item Student login with incorrect password.
+	\item Student login with incorrect username.
+	\item Employer login with incorrect password.
+	\item Employer login with incorrect username.
+	\item Course Coordinator login with correct credentials.
+	\item Course Coordinator with incorrect password.
+	\item Course Coordinator with incorrect username.
+	\item Course Coordinator notifying they have accepted an internship.
+	\item Course Coordinator submits an advertisement.
+	\item Course Coordinator tries to view details of a nonexistent student.
+	\item Course Coordinator registers a new employer.
+\end{enumerate}
+
 \subsection{Failed Use Cases}
 
 \subsubsection{Approve Accepted Offer}
@@ -439,6 +524,10 @@ use the supplied data, the failing cannot be entirely verified. One can only
 assume that the supplied data for students and employers is incorrect.
 
 \subsubsection{Notify Accepted Offer}
+
+The notify accepted offer fails because login fails. Login fails because the
+supplied data for student and employers appears to be incorrect and there is
+no way to set up a user.
 
 \subsubsection{Publish Advertisement}
 
