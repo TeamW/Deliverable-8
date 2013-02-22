@@ -18,3 +18,10 @@ Issue with the use case in the documentation - the use case is viewStudentDetail
 which is a command that the UI already has, but the main facade doesn't have a stub method 
 for this. It is possible we're meant to add it in but that defeats the whole point of 
 having a standardised facade for everyone. Maybe they forgot to add it in?
+
+NOTE - since they're using the annoyingly out of date Date classes to find the number 
+of days between Dates we can use this formula grabbed from stackOverFlow
+
+final long DAY_IN_MILLIS = 1000 * 60 * 60 * 24;
+
+int diffInDays = (int) ((date1.getTime() - date2.getTime())/ DAY_IN_MILLIS );
