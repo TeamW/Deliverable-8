@@ -1,0 +1,191 @@
+\documentclass[11pt]{l3deliverable}
+\usepackage[table]{xcolor}
+\usepackage{geometry}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\newcolumntype{T}{>{\centering\arraybackslash}m{0.20\textwidth}}
+\newcolumntype{L}{>{\centering\arraybackslash}m{0.74\textwidth}}
+\definecolor{medium-red}{rgb}{0.35,0,0}
+\hypersetup{colorlinks, linkcolor={medium-red}, citecolor={medium-red},
+urlcolor={medium-red}}
+\geometry{a4paper}
+\setlength\parindent{0pt}
+\title{Acceptance Test Report}
+\deliverableID{D8.3}
+\project{PSD3 Group Exercise 2}
+\team{W}
+\version{1.0}
+\author{
+    Gordon Reid: 1002536R\\
+    Ryan Wells: 1002253W\\
+    Kristopher Stewart: 1007175S\\
+    David Selkirk: 1003646S\\
+    James Gallagher: 0800899G\\
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+\subsection{Identification}
+
+This is the acceptance test report completed by Team W based on the acceptance
+test plan created by Team W and ran on an complete system implementation
+of the internship management system supplied by Team V. The internship
+management system is for Software Engineering (SE) and Electronic and
+Software Engineering (ESE) students, studying in the School of Computing
+Science.
+
+\subsection{Related Documentation}
+
+PSD3 Group Exercise Description:
+
+\url{http://fims.moodle.gla.ac.uk/file.php/128/coursework/psd3-ge-2.pdf}
+
+PSD3 Requirements Specification:
+
+\url{fims.moodle.gla.ac.uk/file.php/128/coursework/requirements-specification-ge2.pdf}
+
+\subsection{Purpose and Description Of Document}
+
+This document serves as the Acceptance Test Report based on the test cases
+created by Team W, ran on the internship management implementation by Team V.
+
+\newpage
+
+\section{Testing}
+
+\subsection{Approve Accepted Offer}
+
+\input{aao.tex}
+
+\subsection{Login}
+
+\input{l.tex}
+
+\newpage
+
+\subsection{Notify Accepted Offer}
+
+\input{nao.tex}
+
+\newpage
+
+\subsection{Publish Advertisement}
+
+\input{pa.tex}
+
+\subsection{Register Employer}
+
+\input{re.tex}
+
+\subsection{Submit Advertisement}
+
+\input{sa.tex}
+
+\subsection{View Advertisement Detail}
+
+\input{vad.tex}
+
+\subsection{View Advertisement Summary}
+
+\input{vas.tex}
+
+\subsection{View Student Detail}
+
+\input{vsd.tex}
+
+\newpage
+
+\section{Summary}
+
+\subsection{Supplied Data}
+
+The implementation supplied was incomplete with assignAcademicVisitor(),
+recordVisitAssessment(), and createNewSelfSourcedRole(). These methods however
+are not necessarily required for the must have use cases.
+
+The implementation has no compiled JavaDoc and, after inspection, the
+implementation lacks JavaDoc entirely.
+
+There was a large block comment specifying usernames contained within the
+system however only the course coordinator information was supplied. Secondly,
+the team's tests used a different user name for student (100000 instead of
+stu) however neither successfully login.
+
+There was also no build directory and thus no INSTALL.txt.
+
+In addition, there was no README.txt to know how to contact the team. The
+team looked out to the third year computing science Facebook group to contact
+the team. This was successful however the team themselves were not entirely
+sure how the implementation worked.
+
+These issues meant that modifying our test set up was impossible to conduct
+while maintaining the black box testing benefits.
+
+\subsection{Overall test results}
+
+The entire test suite comprised of forty test cases. Of those there were two
+failures and twenty seven errors (all java.lang.NullPointerException).
+
+The test cases which passed are exhaustively listed below:
+
+\begin{enumerate}
+	\item Student login with incorrect password.
+	\item Student login with incorrect username.
+	\item Employer login with incorrect password.
+	\item Employer login with incorrect username.
+	\item Course Coordinator login with correct credentials.
+	\item Course Coordinator with incorrect password.
+	\item Course Coordinator with incorrect username.
+	\item Course Coordinator notifying they have accepted an internship.
+	\item Course Coordinator submits an advertisement.
+	\item Course Coordinator tries to view details of a nonexistent student.
+	\item Course Coordinator registers a new employer.
+\end{enumerate}
+
+\subsection{Failed Use Cases}
+
+\subsubsection{Approve Accepted Offer}
+
+The approve accepted offer fails because login fails. Login fails because the
+supplied data for student and employers appears to be incorrect and there is
+no way to set up a user.
+
+\subsubsection{Login}
+
+The login use case failed for students and employers. As we were only able to
+use the supplied data, the failing cannot be entirely verified. One can only
+assume that the supplied data for students and employers is incorrect.
+
+\subsubsection{Notify Accepted Offer}
+
+The notify accepted offer fails because login fails. Login fails because the
+supplied data for student and employers appears to be incorrect and there is
+no way to set up a user.
+
+\subsubsection{Publish Advertisement}
+
+\subsubsection{Register Employer}
+
+\subsubsection{Submit Advertisement}
+
+\subsubsection{View Advertisement Detail}
+
+\subsubsection{View Advertisement Summary}
+
+\subsubsection{View Student Detail}
+
+\end{document}

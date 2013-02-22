@@ -1,0 +1,222 @@
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityTCLogin1\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login a valid student. User: 100000, Pass: 1234\\
+\hline
+Setup & None possible - unable to add own users.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Student '100000' logged in, true returned.\\
+\hline
+Actual Outcome & Student not logged in, false returned.\\
+\hline
+Additional Comments & Supplied user information appears to have been 
+incorrect.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityTCLogin2\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login an invalid student. User: 100000, Pass: notmypassword\\
+\hline
+Setup & None possible - unable to add own users.\\
+\hline
+Pass/Fail & \cellcolor{green}Pass\\
+\hline
+Expected Outcome & Student not logged in, false returned.\\
+\hline
+Actual Outcome & Student not logged in, false returned.\\
+\hline
+Additional Comments & As expected as there would appear to be no student 
+users installed.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityTCLogin3\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login an invalid student. User: 0000000a, Pass: notmypassword\\
+\hline
+Setup & None possible - unable to add own users.\\
+\hline
+Pass/Fail & \cellcolor{green}Pass\\
+\hline
+Expected Outcome & Student not logged in, false returned.\\
+\hline
+Actual Outcome & Student not logged in, false returned.\\
+\hline
+Additional Comments & As expected as there would appear to be no student 
+users installed.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityTCLogin4\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login a valid employer. User: empl, Pass: 1234\\
+\hline
+Setup & None possible - unable to add own users.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Employer 'empl' logged in, true returned.\\
+\hline
+Actual Outcome & Employer not logged in, false returned.\\
+\hline
+Additional Comments & Supplied user information appears to have been incorrect.
+\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityTCLogin5\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login an invalid employer. User: empl, Pass: notmypassword\\
+\hline
+Setup & None possible - unable to add own users.\\
+\hline
+Pass/Fail & \cellcolor{green}Pass\\
+\hline
+Expected Outcome & Employer not logged in, false returned.\\
+\hline
+Actual Outcome & Employer not logged in, false returned.\\
+\hline
+Additional Comments & As expected as there would appear to be no employer users 
+installed.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityTCLogin6\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login an invalid employer. User: notAnEmployer, Pass: 
+notmypassword\\
+\hline
+Setup & None possible - unable to add own users.\\
+\hline
+Pass/Fail & \cellcolor{green}Pass\\
+\hline
+Expected Outcome & Employer not logged in, false returned.\\
+\hline
+Actual Outcome & Employer not logged in, false returned.\\
+\hline
+Additional Comments & As expected as there would appear to be no employer users 
+installed.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityTCLogin7\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login a valid course coordinator. User: tws, Pass: 1234\\
+\hline
+Setup & None possible - unable to add own users.\\
+\hline
+Pass/Fail & \cellcolor{green}Pass\\
+\hline
+Expected Outcome & Course coordinator 'tws' logged in, true returned.\\
+\hline
+Actual Outcome & Course coordinator 'tws' logged in, true returned.\\
+\hline
+Additional Comments & Supplied user information appears to have been correct.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityTCLogin8\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login an invalid course coordinator. User: tws, Pass: 
+notmypassword\\
+\hline
+Setup & None possible - unable to add own users.\\
+\hline
+Pass/Fail & \cellcolor{green}Pass\\
+\hline
+Expected Outcome & Course coordinator not logged in, false returned.\\
+\hline
+Actual Outcome & Course coordinator not logged in, false returned.\\
+\hline
+Additional Comments & Supplied user information appears to have been correct.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityTCLogin9\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login an invalid course coordinator. User: NotTheCC, Pass: 
+notmypassword\\
+\hline
+Setup & None possible - unable to add own users.\\
+\hline
+Pass/Fail & \cellcolor{green}Pass\\
+\hline
+Expected Outcome & Course coordinator not logged in, false returned.\\
+\hline
+Actual Outcome & Course coordinator not logged in, false returned.\\
+\hline
+Additional Comments & Supplied user information appears to have been correct.\\
+\hline
+\end{tabularx}

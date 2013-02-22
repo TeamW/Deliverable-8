@@ -1,0 +1,72 @@
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityNAO1\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator and notify of an internship.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{green}Pass\\
+\hline
+Expected Outcome & Nothing, course coordinators do not do internships.\\
+\hline
+Actual Outcome & Nothing, course coordinators do not do internships.\\
+\hline
+Additional Comments &\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityNAO2\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as an employer and notify of an internship.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Nothing, employers do not do internships.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & Due to login failure and the facade assumption that a
+user is logged in, null pointer exception happens.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityNAO3\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator and accept a student's internship.
+The student does not exist.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & No change and program doesn't crash.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & Due to login failure and the facade assumption that a
+user is logged in, null pointer exception happens.\\
+\hline
+\end{tabularx}
