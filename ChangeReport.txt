@@ -1,0 +1,8 @@
+Change plan - this is just a note of all changes that will need to be made to the system.
+Hopefully this will stop changes breaking the system in unexpected ways.
+
+Changes to studentImpl - change the internship to a list of internships. 
+Change the getter to return a list of internships, and the setter should 
+just add a new internship to the list.
+
+Changes to Admin - 
