@@ -5,4 +5,7 @@ Changes to studentImpl - change the internship to a list of internships.
 Change the getter to return a list of internships, and the setter should 
 just add a new internship to the list.
 
-Changes to Admin - 
+Changes to Admin - need to change approveOffer(). It currently takes a matric number,
+but now that a student can have multiple internships it will also need an identifier 
+for a specific advertisement. Similarly, when assigning an academic visitor we'll need a
+way to identify which internship it is that we want to assign the visitor to.
