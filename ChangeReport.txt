@@ -3,10 +3,15 @@ Hopefully this will stop changes breaking the system in unexpected ways.
 
 Changes to studentImpl - change the internship to a list of internships. 
 Change the getter to return a list of internships, and the setter should 
-just add a new internship to the list.
+just add a new internship to the list provided it meets the date criteria.
 
 Changes to Admin - need to change approveOffer(). It currently takes a matric number,
 but now that a student can have multiple internships it will also need an identifier 
 for a specific advertisement. Similarly, when assigning an academic visitor we'll need a
 way to identify which internship it is that we want to assign the visitor to. 
 RecordVisitAssessment() also needs some identifier for a specific advert.
+
+Issue with the use case in the documentation - the use case is viewStudentDetails, 
+which is a command that the UI already has, but the main facade doesn't have a stub method 
+for this. It is possible we're meant to add it in but that defeats the whole point of 
+having a standardised facade for everyone. Maybe they forgot to add it in?
