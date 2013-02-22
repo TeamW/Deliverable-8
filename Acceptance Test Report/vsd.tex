@@ -1,0 +1,96 @@
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityVS1\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator and view a student.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Student details available.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & No students exist in system and none can be added.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityVS2\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator and view a nonexistent student.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{green}Pass\\
+\hline
+Expected Outcome & Nothing, student doesn't exist.\\
+\hline
+Actual Outcome & Nothing, student doesn't exist.\\
+\hline
+Additional Comments & No students exist in system and none can be added.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityVS3\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as employer and view a student.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Student details unavailable, employers cannot view
+students.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & No students exist in system and none can be added.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityVS4\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as student and view a student.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Student details unavailable, students cannot view
+students.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & No students exist in system and none can be added.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
