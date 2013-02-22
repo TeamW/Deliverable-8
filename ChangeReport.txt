@@ -8,4 +8,5 @@ just add a new internship to the list.
 Changes to Admin - need to change approveOffer(). It currently takes a matric number,
 but now that a student can have multiple internships it will also need an identifier 
 for a specific advertisement. Similarly, when assigning an academic visitor we'll need a
-way to identify which internship it is that we want to assign the visitor to.
+way to identify which internship it is that we want to assign the visitor to. 
+RecordVisitAssessment() also needs some identifier for a specific advert.
