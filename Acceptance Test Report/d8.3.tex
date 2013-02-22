@@ -178,6 +178,14 @@ no way to set up a user.
 
 \subsubsection{Publish Advertisement}
 
+The publish advertisement use case fails because login fails. Login fails 
+because the supplied data for student and employers appears to be incorrect and 
+there is no way to set up a user.
+
+In addition to this there is an assumption that the advertisement to be
+published exists. If publishing a non-existent advertisement is attempted the
+application crashes from a null pointer exception.
+
 \subsubsection{Register Employer}
 
 \subsubsection{Submit Advertisement}

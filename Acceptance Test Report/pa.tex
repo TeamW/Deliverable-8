@@ -1,0 +1,156 @@
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityPA1\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator publish an advertisement so a 
+student can view it.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Advertisement is published and available to be viewed by
+a student.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & Due to login failure and the facade assumption that a user 
+is logged in, null pointer exception happens.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityPA2\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator publish an advertisement and still
+have the course coordinator view it.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Advertisement is published and available to be viewed by the
+course coordinator.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & Due to login failure and the facade assumption that a user 
+is logged in, null pointer exception happens.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityPA3\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator publish an advertisement and still
+have the employer who created it view it.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Advertisement is published and available to be viewed by the
+owner employer.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & Due to login failure and the facade assumption that a user 
+is logged in, null pointer exception happens.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityPA4\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator publish an advertisement that
+doesn't exist, then try to get a student to view it.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Nothing happens as advert doesn't exist.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & The facade assumes that an advertisement exists so
+null pointer exception happens.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityPA5\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator publish an advertisement that
+doesn't exist, then try to get the course coordinator to view it.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Nothing happens as advert doesn't exist.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & The facade assumes that an advertisement exists so
+null pointer exception happens.\\
+\hline
+\end{tabularx}
+
+\vspace{2em}
+
+\begin{tabularx}{\textwidth}{|T|L|}
+\hline
+Identifier & UtilityPA6\\
+\hline
+Date Tested & 18/02/2013\\
+\hline
+Tester & Gordon Reid - 1002536r\\
+\hline
+Description & Login as course coordinator publish an advertisement that
+doesn't exist, then try to get an employer to view it.\\
+\hline
+Setup & None possible - unable to add own users or modify them.\\
+\hline
+Pass/Fail & \cellcolor{red}Fail\\
+\hline
+Expected Outcome & Nothing happens as advert doesn't exist.\\
+\hline
+Actual Outcome & Null pointer exception.\\
+\hline
+Additional Comments & The facade assumes that an advertisement exists so
+null pointer exception happens.\\
+\hline
+\end{tabularx}
