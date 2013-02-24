@@ -25,3 +25,8 @@ of days between Dates we can use this formula grabbed from stackOverFlow
 final long DAY_IN_MILLIS = 1000 * 60 * 60 * 24;
 
 int diffInDays = (int) ((date1.getTime() - date2.getTime())/ DAY_IN_MILLIS );
+
+Actual changes made
+Student now has appropriate getter for internships. Documentation updated.
+StudentImpl now has list of internships, getter returns the list. Setter
+checks if internships overlap, adds only if no.
