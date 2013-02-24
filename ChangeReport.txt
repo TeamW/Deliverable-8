@@ -30,3 +30,6 @@ Actual changes made
 Student now has appropriate getter for internships. Documentation updated.
 StudentImpl now has list of internships, getter returns the list. Setter
 checks if internships overlap, adds only if no.
+Student now checks on each add if the internships add up to 12 weeks, boolean
+flag added to indicate this. May only be necessary for actually accepting 
+internships, so method may be moved once this is clarified.
