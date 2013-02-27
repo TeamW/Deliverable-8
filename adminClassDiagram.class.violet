@@ -7,7 +7,7 @@
      <void property="text">
       <string>publishAdvertisement(int advertisementIndex, String comment) : void
 registerNewEmployer(String name, String email) : boolean
-approveAcceptedOffer(String matriculation) : void
+approveAcceptedOffer(String matriculation, Integer id) : void
 assignAcademicVisitor(String matriculation, String visitorName) : void
 createNewAdvertisement(Employer e, String applicationDetails) : Advertisement
 selectStudent(String matriculation) : Student
