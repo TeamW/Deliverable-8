@@ -1,0 +1,85 @@
+\documentclass[11pt]{l3deliverable}
+\usepackage[table]{xcolor}
+\usepackage{geometry}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\newcolumntype{T}{>{\centering\arraybackslash}m{0.20\textwidth}}
+\newcolumntype{L}{>{\centering\arraybackslash}m{0.74\textwidth}}
+\definecolor{medium-red}{rgb}{0.35,0,0}
+\hypersetup{colorlinks, linkcolor={medium-red}, citecolor={medium-red},
+urlcolor={medium-red}}
+\geometry{a4paper}
+\setlength\parindent{0pt}
+\title{Change Report}
+\deliverableID{D8.3}
+\project{PSD3 Group Exercise 2}
+\team{W}
+\version{1.0}
+\author{
+    Gordon Reid: 1002536R\\
+    Ryan Wells: 1002253W\\
+    Kristopher Stewart: 1007175S\\
+    David Selkirk: 1003646S\\
+    James Gallagher: 0800899G\\
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+\subsection{Identification}
+
+This is the change report completed by Team W detailing changes to the 
+internship management system. The internship management system is for 
+Software Engineering (SE) and Electronic and Software Engineering (ESE) 
+students, studying in the School of Computing Science.
+
+\subsection{Related Documentation}
+
+D8.4 Task Description:
+
+\url{http://fims.moodle.gla.ac.uk/file.php/128/coursework/maintenance_d8.4.pdf}
+
+PSD3 Group Exercise Description:
+
+\url{http://fims.moodle.gla.ac.uk/file.php/128/coursework/psd3-ge-2.pdf}
+
+PSD3 Requirements Specification:
+
+\url{fims.moodle.gla.ac.uk/file.php/128/coursework/requirements-specification-ge2.pdf}
+
+\subsection{Purpose and Description Of Document}
+
+This document serves as the Change Report based on the updated requirements
+detailed in the D8.4 handout. 
+
+\newpage
+
+\section{Major Changes}
+
+\subsection{Student and StudentImpl}
+
+The most fundamental change in the internship management system was altering the
+number of internships a student could have. This required several key changes
+in the Student interface and the StudentImpl class that implements this interface.
+First and foremost, the single internship stored in a student object was replaced 
+with a HashMap of internships. This was modelled after the way the adManager stores
+adverts, complete with a counter that both counts the number of internships have been 
+accepted and allows us to return the most recently accepted internship (vital for the 
+InternMan method approveAcceptedOffer()).
+
+\section{Summary}
+
+\end{document}
