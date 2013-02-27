@@ -76,15 +76,16 @@ number of internships a student could have. This required several key changes
 in the Student interface and the StudentImpl class that implements this interface.
 First and foremost, the single internship stored in a student object was replaced 
 with a HashMap of internships. This was modelled after the way the adManager stores
-adverts, complete with a counter that both counts the number of internships have been 
+adverts, complete with a counter - retrieved via the Student Interface method 
+getMaxInternshipId() - that both counts the number of internships have been 
 accepted and allows us to return the most recently accepted internship (vital for the 
 InternMan method approveAcceptedOffer()). The Student now returns the HashMap of 
 internships rather than the single one. Adding an internship now checks that the new
 internship does not overlap any of the students existing ones, as per the change 
 specifications. Similarly, a private method was created that calculates whether a
-student has enough internships to fill 12 weeks and a getter created to return the 
-results of this method. The abstraction here was to keep the public methods relatively
-short and readable.
+student has enough internships to fill 12 weeks and a getter created in the Student 
+Interface (getEnoughInternships()) to return the results of this method. The abstraction 
+here was to keep the public methods relatively short and readable. 
 
 \subsection{AdminInterface and Admin}
 
