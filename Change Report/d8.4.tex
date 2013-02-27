@@ -86,6 +86,20 @@ student has enough internships to fill 12 weeks and a getter created to return t
 results of this method. The abstraction here was to keep the public methods relatively
 short and readable.
 
+\subsection{AdminInterface and Admin}
+
+The change in the way we get internships had various ripple effects throughout the 
+system. The method approveOffer(String matriculation) was extended with an Integer
+identifier parameter to allow the user to specify which internship to approve. The 
+method assignAcademicVisitor() was also altered to set the visitor in every one of
+the students internships, as the documentation states that for a student all 
+internships will have the same visitor. RecordVisitorAssessment() was changed such
+that it adds the information to the most recently accepted internship.
+
+\subsection{Test Cases}
+
+A few
+
 \section{Summary}
 
 \end{document}
